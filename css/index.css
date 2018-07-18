@@ -347,6 +347,37 @@ ul {
 }
 
 
+/*PORTFOLIO*/
+
+.portfolio {
+    padding-top: 2rem;
+    min-height: 100vh;
+    margin-bottom: 5rem;
+}
+
+.portfolio-wrap__works {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.portfolio-wrap__work {
+    display: inline-block;
+    margin-bottom: 1rem;
+    width: 40%;
+    color: #fff;
+    background-color: #222; 
+  
+}
+.portfolio-wrap__title {
+    margin: 0.25rem; 
+}
+.portfolio-wrap__link img {
+    width: 100%; 
+}
+
+
 
 
 /*CONTACT SECTION*/
