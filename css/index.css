@@ -479,6 +479,7 @@ ul {
 /*main form*/
 
 .form {
+    margin-bottom: 4rem;
     padding: 1rem;
     width: 25rem;
     border: 2px solid var(--main-color);
@@ -519,6 +520,66 @@ ul {
     transition: all 1s;
 }
 
+
+/*feedback form*/
+
+.feedback-form {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--main-color);
+}
+
+.feedback-form__title {
+    margin-bottom: 1rem;
+}
+
+.feedback-box__emoji-label {
+    position: relative;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.emoji {
+    color: #DDD;
+}
+
+.feedback-box__emoji-input--frown:hover + .emoji {
+    color: #dc3545;
+}
+
+.feedback-box__emoji-input--frown:checked + .emoji {
+    color: #dc3545;
+}
+
+.feedback-box__emoji-input--meh:hover + .emoji {
+    color: #ffc107;
+}
+
+.feedback-box__emoji-input--meh:checked + .emoji {
+    color: #ffc107;
+}
+
+.feedback-box__emoji-input--smile:hover + .emoji {
+    color: #28a745;
+}
+
+.feedback-box__emoji-input--smile:checked + .emoji {
+    color: #28a745;
+}
+
+.fedback-box__emoji-input {
+    position: absolute;
+    opacity: 0;
+    left: -5px;
+    top: -2px;
+    width: 5rem;
+    height: 5rem;
+}
+
+.feedback-form__submit {
+    margin: 1rem auto;
+    box-sizing: border-box;
+    border: 1px solid var(--main-color);
+}
 
 /*FOOTER*/
 

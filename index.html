@@ -26,7 +26,7 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Style -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/index.css">
 
 </head>
@@ -190,7 +190,7 @@
                 </nav>
     
                 <form class="contact-form form" action="https://formspree.io/sirmanj92@gmail.com" method="POST" target="_blank">
-                    <h3 class="form__title">text me</h3>
+                    <h3 class="feedback-form__title">text me</h3>
                     <label class="form__label" for="input-name">Your name</label>
                     <input id="input-name" class="form__input" type="text" name="name" autocomplete="name" placeholder="Your name" required>
                     <label class="form__label" for="input-email">Your email</label>
@@ -198,6 +198,16 @@
                     <label for="message">Text here</label>
                     <textarea id="message" class="form__input" name="message" rows="5" placeholder="Text here" required></textarea>
                     <input class="form__input form__submit" type="submit" value="Send">
+                </form>
+                
+                <form class="feedback-form" action="https://formspree.io/sirmanj92@gmail.com" method="POST">
+                    <h3 class="feedback-form__title">Rate this page</h3>
+                    <div class="feedback-form__emoji-box">
+                        <label class="feedback-box__emoji-label feedback-box__emoji-label--frown"><input type="radio" class="fedback-box__emoji-input feedback-box__emoji-input--frown" name="rating" value="fail"><i class="emoji far fa-frown fa-5x"></i></label>
+                        <label class="feedback-box__emoji-label feedback-box__emoji-label--meh"><input type="radio" class="fedback-box__emoji-input feedback-box__emoji-input--meh" name="rating" value="satisfactorily"><i class="emoji far fa-meh fa-5x"></i></label>
+                        <label class="feedback-box__emoji-label feedback-box__emoji-label--smile"><input type="radio" class="fedback-box__emoji-input feedback-box__emoji-input--smile" name="rating" value="well"><i class="emoji far fa-smile fa-5x"></i></label>
+                    </div>
+                  <input class="form__submit feedback-form__submit" type="submit" name="submit-feedback" value="Send Feedback"/>
                 </form>
 
             </section>
